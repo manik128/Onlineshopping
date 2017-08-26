@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Categoryselection"></activity>
+        <activity android:name=".Categoryselection" />
+        <activity android:name=".Home"></activity>
     </application>
 
 </manifest>

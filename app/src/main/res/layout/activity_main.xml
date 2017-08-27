@@ -116,7 +116,7 @@
                         android:singleLine="true"
                         android:drawablePadding="10dp"
                         android:backgroundTint="#000"
-                        android:drawableLeft="@drawable/key"
+                         android:drawableLeft="@drawable/key"
                         android:maxLines="1"
                         android:textAppearance="?android:attr/textAppearanceSmall"
                         android:paddingTop="8dp"

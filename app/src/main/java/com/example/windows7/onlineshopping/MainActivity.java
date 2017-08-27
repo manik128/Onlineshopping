@@ -17,7 +17,7 @@ Button btnregister;
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(MainActivity.this, Categoryselection.class);
+                Intent intent = new Intent(MainActivity.this, Home.class);
                 startActivity(intent);
             }
         });

@@ -6,12 +6,14 @@
     android:layout_height="match_parent"
 
     >
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+   <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_alignParentLeft="true"-->
+    <!--android:fillViewport="true"-->
+    <!--android:layout_alignParentStart="true">-->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -242,7 +244,17 @@
                     </LinearLayout>
 
                 </HorizontalScrollView>
-
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:fillViewport="true"
+                    android:layout_alignParentStart="true">
+                <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -420,6 +432,7 @@
                         </LinearLayout>
                     </LinearLayout>
                 </HorizontalScrollView>
+
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -575,7 +588,32 @@
                         </LinearLayout>
                     </LinearLayout>
                 </HorizontalScrollView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#E9EEF1">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ghost is here"
+                            android:gravity="center"
+                            />
 
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#a6a6a6">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ghost is here"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -592,13 +630,9 @@
                     android:text="ghost is here"
                     android:gravity="center"
                     />
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ghost is here"
-                    android:gravity="center"
-                    />
+
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -610,7 +644,8 @@
                     android:gravity="center"
                     />
             </LinearLayout>
+
         </LinearLayout>
 
-    </ScrollView>
+<!--</ScrollView>-->
 </RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/myborder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:padding="5dp"
+    >
+    <TextView
+        android:layout_width="match_parent"
+
+        android:id="@+id/tvlinepops"
+        android:text="Filter by"
+        android:layout_marginLeft="10dp"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#c6c4c4"
+        android:id="@+id/tvlinepop"
+        android:layout_below="@+id/tvlinepops"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_below="@+id/tvlinepop"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Select Brand"
+            android:drawableRight="@drawable/add"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:paddingRight="10dp"
+            android:textColor="#000"
+            android:background="@drawable/myedittextrec"
+            android:id="@+id/tvselectmake"
+            android:layout_marginTop="1dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginLeft="1dp"
+
+            android:visibility="invisible"
+            android:layout_marginRight="1dp"
+            android:layout_below="@+id/tvselectmake"
+            android:id="@+id/rlselectmake">
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Select Color"
+            android:drawableRight="@drawable/add"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_below="@+id/rlselectmake"
+            android:textColor="#000"
+            android:background="@drawable/myedittextrec"
+            android:id="@+id/tvselectmodel"
+            android:layout_marginTop="1dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginLeft="1dp"
+            android:visibility="invisible"
+            android:layout_marginRight="1dp"
+            android:layout_below="@+id/tvselectmodel"
+            android:id="@+id/rlselectmodel">
+
+        </RelativeLayout>
+
+</RelativeLayout>
+    </RelativeLayout>
+
+

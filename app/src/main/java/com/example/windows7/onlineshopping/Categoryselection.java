@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class Categoryselection extends AppCompatActivity {
-Button btnsort;
+Button btnsort,btnfilter;
     AlertDialog.Builder builder;
     AlertDialog alertDialog;
     @Override
@@ -20,11 +20,23 @@ Button btnsort;
 //        getSupportActionBar().setElevation(0);
 
         btnsort=(Button)findViewById(R.id.btnsort);
+        btnfilter=(Button)findViewById(R.id.btnfilter);
         btnsort.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 builder = new AlertDialog.Builder(Categoryselection.this);
                 View vw = getLayoutInflater().inflate(R.layout.popupmenusort, null);
+                builder.setView(vw);
+                alertDialog = builder.create();
+                alertDialog.show();
+
+            }
+        });
+        btnfilter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                builder = new AlertDialog.Builder(Categoryselection.this);
+                View vw = getLayoutInflater().inflate(R.layout.popupmenufilter, null);
                 builder.setView(vw);
                 alertDialog = builder.create();
                 alertDialog.show();

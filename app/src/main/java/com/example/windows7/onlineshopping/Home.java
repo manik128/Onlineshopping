@@ -13,14 +13,14 @@ public class Home extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.newlayout);
-//        cat1=(ImageButton)findViewById(R.id.fab1);
-//        cat1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent = new Intent(Home.this, Categoryselection.class);
-//                startActivity(intent);
-//            }
-//        });
+        cat1=(ImageButton)findViewById(R.id.fab1);
+        cat1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Home.this, Categoryselection.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }

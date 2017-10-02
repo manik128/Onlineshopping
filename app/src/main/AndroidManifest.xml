@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Categoryselection" />
-        <activity android:name=".Home"></activity>
+        <activity android:name=".Home" />
+        <activity android:name=".CartActivity"></activity>
     </application>
 
 </manifest>
